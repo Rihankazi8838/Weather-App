@@ -1,0 +1,70 @@
+/* src/components/LocationForm.css */
+.location-form-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.location-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.location-form input {
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buttons-container button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 48%;
+  border-radius: 5px;
+  color: white;
+}
+
+.buttons-container button:hover {
+  background-color: #005f73;
+}
+
+.suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
+}

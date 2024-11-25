@@ -1,0 +1,57 @@
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #008CBA;
+  --background-color-light: #f0f2f5;
+  --text-color-light: #333;
+  --header-font: 'Roboto', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+}
+
+.App {
+  text-align: center;
+  font-family: var(--body-font);
+  background: url('C:\Users\91937\weather-app\public\background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+.App-header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  font-family: var(--header-font);
+  color: white;
+  margin: 0;
+}
+
+.weather-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .weather-container {
+    width: 95%;
+    padding: 10px;
+  }
+  .weather-item {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+}

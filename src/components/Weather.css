@@ -1,0 +1,87 @@
+/* src/components/Weather.css */
+.weather-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start; /* Ensure items align correctly */
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+}
+
+.weather-item {
+  flex: 1 1 calc(50% - 40px); /* Adjust width for better layout */
+  padding: 15px;
+  margin: 10px; /* Add margin for better spacing */
+  border-radius: 10px;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-item:hover {
+  transform: translateY(-5px);
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px; /* Adjust margin for better spacing */
+}
+
+.weather-item h2 {
+  font-size: 1.8em;
+  color: var(--primary-color);
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; /* Ensure info fits within the item */
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-info p {
+  font-size: 1.1em;
+  color: var(--text-color);
+  margin: 5px 0;
+}
+
+.delete-btn {
+  background-color: #ff5c5c;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #e04646;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .weather-item {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+}
